@@ -5,12 +5,11 @@ description: "Hey,I'm rencongkang'."
 header-img: "img/post-bg-dog.jpg"
 ---
 
-<!-- Language Selector
+<!-- Language Selector  -->
 <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
     <option value="1"> 英文 English </option>
 </select>
--->
 <!-- Chinese Version -->
 <div class="zh post-container">
 
@@ -33,7 +32,7 @@ header-img: "img/post-bg-dog.jpg"
     <li><a href="https://horck.github.io">Horck</a></li>    </ul>
 </div>
 
-<!-- English Version
+<!-- English Version  -->
 <div class="en post-container">
     <blockquote><p>Yet another iOS Developer. <br>
     Yet another Life-long Student.</p></blockquote>
@@ -53,8 +52,7 @@ header-img: "img/post-bg-dog.jpg"
     <li><a href="https://horck.github.io">BY</a></li>    </ul>
 </div>
 
--->
-<!-- Handle Language Change
+<!-- Handle Language Change  -->
 <script type="text/javascript">
     // get nodes
     var $zh = document.querySelector(".zh");
@@ -97,11 +95,11 @@ header-img: "img/post-bg-dog.jpg"
 
 {% if site.duoshuo_username %}
  
- -->
 
-<!-- 多说评论框 start
+
+<!-- 多说评论框 start  -->
 <div class="comment">
-    <!-- This id is used for indexing my loss comments forcedly
+    <!-- This id is used for indexing my loss comments forcedly  -->
     <div class="ds-thread"
     {% if site.duoshuo_username == "qiubaiying" %}
         data-thread-id="0ee040117ec56f17aa7e2523d1eae19b"
@@ -115,7 +113,7 @@ header-img: "img/post-bg-dog.jpg"
 </div>
 <!-- 多说评论框 end -->
 
-<!-- 多说公共JS代码 start (一个网页只需插入一次)
+<!-- 多说公共JS代码 start (一个网页只需插入一次)  -->
 <script type="text/javascript">
     // dynamic User hacking by Hux
     var _user = '{{site.duoshuo_username}}';
@@ -131,12 +129,12 @@ header-img: "img/post-bg-dog.jpg"
          || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
 </script>
-<!-- 多说公共JS代码 end
+<!-- 多说公共JS代码 end  -->
 {% endif %}
 
 
 {% if site.disqus_username %}
-<!-- disqus 评论框 start
+<!-- disqus 评论框 start  -->
 <div class="comment">
     <div id="disqus_thread" class="disqus-thread">
 
@@ -144,7 +142,7 @@ header-img: "img/post-bg-dog.jpg"
 </div>
 <!-- disqus 评论框 end -->
 
-<!-- disqus 公共JS代码 start (一个网页只需插入一次)
+<!-- disqus 公共JS代码 start (一个网页只需插入一次)  -->
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "{{site.disqus_username}}";
